@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Monsa sourcing - This is us</title>
+</head>
+<body>
+
+<!-- Menu -->
+<?php  
+      
+      include 'menu.php';
+      
+?>
+
+
+<div class="header">
+            <h3 class="subheading" style="padding: 3rem; font-weight: 300; font-size: 2rem;">This is us</h3>
+    </div>
+
+    <div class="vertical-text">
+
+            <div class="verical-text-wrapper">
+                    <h4 class="vericaltext">This is us</h4>
+                    <div class="yellowbar"></div>
+            </div>
+    
+    
+     </div>
+
+
+     <div class="thisisus-section1">
+
+
+                <div class="sangeeta-left">
+                    <img class="sangeetaphoto" src="images/sangeeta-profile-pic.jpg" alt="">
+
+                </div>
+
+
+                <div class="sangeeta-right">
+                    <h1>Sangeeta Nayak</h1>
+                    <h2 style="margin-bottom: 2rem;">Founder</h2>
+                    <p style="color: black;">Born in a conservative South Indian family, Sangeeta earned her degree in fashion during an era when it was considered a taboo unless you were doctor or an engineer by
+                    profession. The passion & fire continued, followed by a career of more than two decades of sourcing experience with renowned brands like French Connection, Mothercare
+                    and Ralph Lauren.<br><br>
+
+                    Sangeeta’s key strength’s are strategic thinking, a very defined vision and holistic global mindset.<br><br>
+
+                    Along the corporate journey Sangeeta came across artisans that created magic with their hands and one fine day she decided to follow her heart and shift gears to her true
+                    passions: heritage, handcraft & luxury.<br><br>
+
+                    She is one of the founders of MonSa and one of the key leaders of the organization as well.</p>
+
+                </div>
+
+
+     </div>
+
+
+
+
+     <div class="thisisus-section2">
+
+
+                
+
+
+                <div class="monu-left">
+                    <h1>Monu Katoch</h1>
+                    <h2 style="margin-bottom: 2rem;">Co Founder</h2>
+                    <p style="color: black; margin-bottom: 2rem;">Artistic and creative are few of the words used to describe her by her colleagues and friends.<br><br>
+
+                    If beauty is in the eyes of the beholder, she truly believes that Art too can take its place. An unbridled connoisseur of Art, whether it be modern or vintage, be it home décor or a piece of wood.<br><br>
+
+                    Monu has been professionally associated with some of the most reputed brands from across the continents and her astute eye for detail makes product development a core strength. Her passion
+                    leans towards R&D, interpretation of design and converting them into a credible & sustainable business model.<br><br>
+
+                    Having a genuine deep seated love for travel and exploration led to gaining of knowledge and understanding of how people, culture and region influence art, crafts and fashion. The inspiration
+                    and desire to co-found MonSa stemmed from this love for innovation and creation, and to showcase it to the world.<br><br>
+
+                    An avid animal lover, she loves yoga, spending time with her family, globe trotting and tending to her rooftop garden.
+                </div>
+
+
+
+                <div class="monu-right">
+                    <img class="monuphoto" src="images/monu-profile-pic.jpg" alt="">
+
+                </div>
+
+
+</div>
+
+
+
+
+
+<!-- footer -->
+<?php  
+      
+      include 'footer-2.php';
+      
+?>
+
+
+
+
+
+     </body>
+</html>

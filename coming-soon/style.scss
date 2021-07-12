@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: futuraBT;
+    src: url(fonts/futura-medium-bt.ttf);
+  }
+
+
+a{
+    text-decoration: none;
+}
+
+.main-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: url('images/cover.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.text-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: yellow;
+}
+
+.text-container img{
+    width: 40%;
+    transition: 1s;
+}
+
+.text-container h1{
+ color: white;
+ font-size: 1.5rem;
+ padding: 0.5rem;
+ margin-top: 3rem;
+ font-family: futuraBT;
+ 
+}
+
+
+
+.button-container{
+    display: flex;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.411);
+    justify-content: center;
+    // border: 1px solid white;
+    border-radius: 3px;
+    transition: 0.4s;
+    cursor: pointer;
+    
+    
+}
+
+.button-container:hover{
+    background: black;
+}
+
+
+
+.button-container h3{
+color: white;
+font-family: futuraBT;
+}
+
+.button-container img{
+    width: 5%;
+    margin-left: 0.5rem;
+}
+
+
+
+.logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7455357142857143) 0%, rgba(0,0,0,0) 100%);
+
+}
+
+.logo-container img{
+    padding: 2rem;
+    transition: 1s;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .text-container img{
+        width: 60%;
+    }
+    
+
+    .logo-container img{
+        width: 70%;
+    }
+
+    .button-container img{
+        width: 5%;
+        margin-left: 0.5rem;
+    }
+
+}
