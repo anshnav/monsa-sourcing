@@ -1,21 +1,33 @@
 
+
+// Scroll to top on reload of homepage
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
 
 
 
+// Jquery code to include navigation in all the pages
+$(function(){
+  $("#nav-placeholder").load("menu.html");
+});
+
+// Jquery code to include footer in all pages
+$(function(){
+  $("#foot-placeholder").load("footer.html");
+});
+
+// Jquery code to include footer2 in all pages
+$(function(){
+  $("#foot2-placeholder").load("footer-2.html");
+});
+
+
+// ---Black overlay loader animation
   var loaderanim = gsap.timeline();
   loaderanim.fromTo(".loaderbar", 1, { x: 0, opacity: 1}, {delay: 0.5, x: 50, opacity:0});
   loaderanim.fromTo(".overlayloader", 1, {opacity: 1}, {opacity:0, display: 'none'});
-
-
-
-
-
-
-
-
 
 
 
