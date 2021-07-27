@@ -77,11 +77,7 @@ gsap.registerPlugin(ScrollTrigger);
     // }); 
 
     
-   
-
-   
-
-
+  
 
   
 
