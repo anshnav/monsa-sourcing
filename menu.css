@@ -290,6 +290,12 @@ p {
     height: 3rem;
     background: black;
   }
+  .nav-textblack {
+    color: white;
+  }
+  .linesblack {
+    background: white;
+  }
   .nav-logo-container {
     margin-left: 3rem;
   }
