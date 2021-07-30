@@ -31,7 +31,10 @@ $(function(){
   var loaderanim = gsap.timeline();
   loaderanim.fromTo(".loaderbar", 1, { x: 0, opacity: 1}, {delay: 0.5, x: 50, opacity:0});
   loaderanim.fromTo(".overlayloader", 1, {opacity: 1}, {opacity:0, display: 'none'});
-
+// $(window).on(load,function(){
+//   $(".overlayloader").fadeOut(1000);
+//   $(".main-container").faceIn(1000);
+// });
 
 
 var section1anim = gsap.timeline();

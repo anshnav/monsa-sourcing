@@ -39,7 +39,7 @@
   }
   .overlayloader{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     z-index: 999;
     background: black;
@@ -55,6 +55,39 @@
     background: #02435B;
 }
 
+
+
+.loadercircle {
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    
+  }
+  
+  .loadercircle:first-of-type {
+    background: #bf35bf;
+    // top: 20px;
+    animation: circleScale 3s infinite;
+    // animation-delay: 1.5s;
+    z-index: 1;
+  }
+  
+  
+  
+  @keyframes circleScale {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
   
 
  
@@ -245,6 +278,7 @@ padding: 2rem;
     font-family: 'millanova';
     font-size: 2rem;
     color: white;
+    margin-bottom: -4rem;
 }
 
 .vmsubheading{
@@ -280,11 +314,12 @@ padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
 }
 
 
 .home-section2-right img{
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -536,68 +571,58 @@ padding: 2rem;
         align-items: flex-end;
     }
 
-    .whyus-container-1{
+   
+
+    .whyus-section{
         width: 100%;
-        height: auto;
+        // background: lightcoral;
         display: flex;
-        align-items: center;
-        padding: 5rem 5rem 0rem 5rem;
+        justify-content: center;
+        margin: 3rem 0rem 3rem 0rem;
        
     }
 
+    .whyus-wrapper{
+        width: 80%;
+        display: flex;
+    }
 
-   
 
-    .whyus-section1-left{
+    .whyus-textwrapper{
+        // background: blue;
         width: 50%;
-        // box-sizing: border-box;
-     
+        padding: 1rem;
+    }
+
+    .whyusimagecontainer{
+        width: 50%;
+        // background: red;
+    }
+
+    .whyusimg{
+        width: 100%;
+    }
+
+    .whyussubheading{
+        color: black; 
+        margin-bottom: -1rem; 
+        font-family:'millanova'; 
+        
     }
 
     .subheading2{
         font-size: 2.3rem;
     }
 
-    .whyus-section1-right{
-        width: 50%;
-        height: auto;
-        padding: 2rem;
-        
-    }
+  
 
-    .whyusimg{
-        box-shadow: -1px 0px 15px -1px rgba(0,0,0,0.21);
-        width: 90%;
-    }
 
-   
-
-    .whyus-container-2{
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        padding: 5rem 5rem 0rem 5rem;
-    }
-
-    .whyus-section2-left{
-        width: 50%;
-        height: auto;
-    }
-
-    .whyus-section2-left img{
-        width: 90%;
-    }
 
     .whyusimg3, .whyusimg4, .whyusimg5{
         width: 90%;
     }
 
 
-    .whyus-section2-right{
-        width: 50%;
-
-    }
 
     .serviceheading{
         font-size: 1.5rem;
@@ -672,24 +697,53 @@ padding: 2rem;
     // -------vision and mission styling------//
 
    
-   .vm-section-1{
+   .vision-section{
        width: 100%;
+    //    background: lightblue;
        display: flex;
-       flex-direction: column;
-       align-items: center;
+       justify-content: center;
+       margin: 3rem 0rem 3rem 0rem;
+       
    }
 
-  .vm-wrapper{
-      width: 70%;
-      padding: 5rem;
-  }
+   .mission-section{
+       width:100%;
+    //    background: lightcoral;
+       display: flex;
+       justify-content: center;
+   }
 
-  .visionimg{
-      width: 100%;
-      margin: 2rem 0rem 2rem 0rem;
-      box-shadow: -1px 0px 15px -1px rgba(0,0,0,0.21);
-    
-    }
+   .vision-wrapper{
+       width:80%;
+       display: flex;
+   }
+
+   .mission-wrapper{
+    width:80%;
+    display: flex;
+   }
+
+   .vm-txtwrapper{
+       width: 50%;
+    //    background: blue;
+   }
+   .vmimagecontainer{
+       width: 50%;
+    //    background: red;
+   }
+
+   .vmimg{
+       width: 100%;
+   }
+
+   .vmheading{
+    font-family: 'millanova'; 
+    margin-bottom: -4rem;
+   }
+
+  
+
+  
 
 
 
@@ -821,7 +875,7 @@ padding: 2rem;
             height: auto;
         }
 
-        .whyus-container-1{
+        .whyus-section1{
             flex-direction: column;
             padding: 0rem 1rem 0rem 1rem;
                
@@ -843,6 +897,11 @@ padding: 2rem;
 
         .whyus-section1-right, .whyus-section2-left{
             width: 100%;
+        }
+
+        .whyus-textwrapper{
+           
+            max-width: 100%;
         }
 
 
@@ -923,9 +982,62 @@ padding: 2rem;
 
     @media only screen and (max-width: 768px) {
 
+        .header{
+            height: 20vh;
+        }
 
-       
+        .whyus-wrapper{
+            width: 100%;
+        }
 
+        .whyuswrapper1{
+            flex-direction: column-reverse;
+        }
+
+        .whyuswrapper2{
+            flex-direction: column;
+        }
+
+        .whyuswrapper3{
+            flex-direction: column-reverse;
+        }
+
+        .whyuswrapper4{
+            flex-direction: column;
+        }
+
+        .whyuswrapper5{
+            flex-direction: column-reverse;
+        }
+
+        .whyus-textwrapper{
+            width: 100%;
+        }
+
+        .whyusimagecontainer{
+            width: 100%;
+        }
+    
+
+
+        .vision-wrapper{
+            width:100%;
+            flex-direction: column-reverse;       
+         }
+     
+        .mission-wrapper{
+            width:100%;
+            flex-direction: column-reverse; 
+        }
+
+        .vm-txtwrapper{
+            width: 100%;
+            padding:2rem;
+      
+        }
+        .vmimagecontainer{
+            width: 100%;
+        }
        
 
         .contact-container{
@@ -942,6 +1054,8 @@ padding: 2rem;
             
         }
 
+        
+
     }
 
 
@@ -954,6 +1068,7 @@ padding: 2rem;
 
          .home-section2-right{
             margin-top: 10rem;
+            padding: 2rem;
         }
 
         .subheading{
@@ -969,8 +1084,17 @@ padding: 2rem;
             
         }
 
+        .whyussubheading{
+            font-size: 1rem;
+            margin-bottom: 0rem;
+        }
 
-
+        .pageheading{
+           
+            font-size: 1.2rem;
+            margin-bottom: -2rem
+            
+        }
 
 
 
