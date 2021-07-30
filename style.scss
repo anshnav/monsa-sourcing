@@ -27,12 +27,9 @@
   }
 
 
-  html,body {
-    margin: 0;
-    background: none;
-    // scroll-snap-type: y mandatory;
-    
-  }
+ body{
+     overflow:hidden;
+ }
 
   a{
       text-decoration: none;
@@ -40,12 +37,13 @@
   .overlayloader{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     background: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 

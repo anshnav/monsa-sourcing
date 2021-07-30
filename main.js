@@ -1,5 +1,15 @@
 
+document.onload = myfunction();
 
+function myfunction() {
+  var enablescroll = gsap.timeline();
+  enablescroll.to("body", {overflow: 'scroll'},'+=2');
+}
+
+// Fadeout Loader screen with jquery
+// $(window).on("load",function(){
+//   $("#overlayloader").fadeOut("slow");
+// });
 // Scroll to top on reload of homepage
 
 // window.onbeforeunload = function () {
@@ -31,10 +41,7 @@ $(function(){
   var loaderanim = gsap.timeline();
   loaderanim.fromTo(".loaderbar", 1, { x: 0, opacity: 1}, {delay: 0.5, x: 50, opacity:0});
   loaderanim.fromTo(".overlayloader", 1, {opacity: 1}, {opacity:0, display: 'none'});
-// $(window).on(load,function(){
-//   $(".overlayloader").fadeOut(1000);
-//   $(".main-container").faceIn(1000);
-// });
+  
 
 
 var section1anim = gsap.timeline();
@@ -123,4 +130,22 @@ $("#explorebtn").click(function() {
   $('html, body').animate({
       scrollTop: $("#section2").offset().top
   }, 500);
+});
+
+
+
+// ---Fadein animation for content----//
+
+
+const reveal = gsap.utils.toArray('.fadein');
+
+reveal.forEach((fadein, i) => {
+  const anim = gsap.fromTo(fadein, {autoAlpha: 0, y: 50}, {duration: 2, autoAlpha: 1, y: 0});
+  ScrollTrigger.create({
+    trigger: fadein,
+    start: "top center",
+    animation: anim,
+    toggleActions: 'play none none none'
+    
+  });
 });
