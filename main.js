@@ -1,4 +1,7 @@
 
+
+// ---Disable scroll on webpages for 2 seconds for preloader screen to fadeout--//
+
 document.onload = myfunction();
 
 function myfunction() {
@@ -66,9 +69,9 @@ const section2anim = gsap.timeline();
 
 section2anim.fromTo(".home-section2-left", 0.8, {opacity: 0}, {opacity: 1});
 section2anim.fromTo(".home-section2-right", 0.8, {opacity: 0, display: 'none'}, {opacity: 1, display: 'flex'});
-section2anim.fromTo("#section2heading", 0.8, {y: -100, opacity: 0}, {y: 0, opacity:1});
+section2anim.fromTo("#section2heading", 0.8, {y: -100, opacity: 0}, {y: 0, opacity:1}, '-=0.5');
 section2anim.fromTo("#section2para", 0.8, {y: -30, opacity: 0}, {y: 0, opacity:1});
-section2anim.fromTo("#section2btn", 0.8, { opacity: 0}, {opacity:1});
+section2anim.fromTo("#section2btn", 0.8, { opacity: 0}, {opacity:1}, '-=0.5');
 
 
 
@@ -90,7 +93,7 @@ ScrollTrigger.create({
 
   section3anim.fromTo(".home-section3-left", 0.8, {opacity: 0}, {opacity: 1});
   section3anim.fromTo(".home-section3-right", 0.8, {opacity: 0, display: 'none'}, {opacity: 1, display: 'flex'});
-  section3anim.fromTo("#section3heading", 0.8, {y: -100, opacity: 0}, {y: 0, opacity:1});
+  section3anim.fromTo("#section3heading", 0.8, {y: -100, opacity: 0}, {y: 0, opacity:1}, '-=0.5');
   section3anim.fromTo("#section3para", 0.8, {y: -30, opacity: 0}, {y: 0, opacity:1});
   section2anim.fromTo("#section3btn", 0.8, { opacity: 0}, {opacity:1});
 
@@ -143,7 +146,7 @@ reveal.forEach((fadein, i) => {
   const anim = gsap.fromTo(fadein, {autoAlpha: 0, y: 50}, {duration: 2, autoAlpha: 1, y: 0});
   ScrollTrigger.create({
     trigger: fadein,
-    start: "top center",
+    start: "top bottom",
     animation: anim,
     toggleActions: 'play none none none'
     

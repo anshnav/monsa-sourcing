@@ -136,7 +136,7 @@ p {
 
 .menu-section-left img {
   padding: 3rem;
-  width: 30%;
+  width: 50%;
 }
 
 .menu-section-right {
@@ -206,7 +206,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -222,6 +223,25 @@ p {
 
 .menu-option a:hover {
   color: white;
+}
+
+.menu-option a:before {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #5a5a5a;
+  top: 50%;
+  right: 0;
+  margin-top: -1px;
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  opacity: 1;
+}
+
+.menu-option a:hover:before {
+  width: 60px;
+  background-color: white;
 }
 
 .option-line {
@@ -278,6 +298,10 @@ p {
 @media only screen and (max-width: 1200px) {
   .menu-section-left {
     width: 30%;
+  }
+  .menu-section-left img {
+    padding: 3rem;
+    width: 100%;
   }
   .menu-section-right {
     width: 70%;
