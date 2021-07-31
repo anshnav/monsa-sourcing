@@ -156,7 +156,6 @@ h2 {
 
 .intro-heading {
   font-size: 2.5rem;
-  max-width: 30rem;
   color: white;
 }
 
@@ -877,6 +876,7 @@ h2 {
   }
   .intro-container {
     padding: 2rem;
+    margin-bottom: 3rem;
   }
   .explore-btn {
     display: none;
@@ -1096,6 +1096,9 @@ h2 {
     margin-top: 10rem;
     padding: 2rem;
   }
+  .content-wrapper {
+    width: 100%;
+  }
   .subheading {
     font-size: 1.8rem;
   }
@@ -1103,7 +1106,7 @@ h2 {
     margin-top: 10rem;
   }
   .sangeeta-right, .monu-left {
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 0rem 1rem 0rem 1rem;
   }
   .whyussubheading {
     font-size: 1rem;

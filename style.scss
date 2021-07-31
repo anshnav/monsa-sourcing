@@ -145,7 +145,7 @@
 
 .intro-heading{
    font-size: 2.5rem;
-   max-width: 30rem;
+//    max-width: 30rem;
    color: white;
   
 }
@@ -811,6 +811,7 @@ padding: 2rem;
 
         .intro-container{
             padding: 2rem;
+            margin-bottom: 3rem;
         }
         
 
@@ -1069,6 +1070,10 @@ padding: 2rem;
             padding: 2rem;
         }
 
+        .content-wrapper{
+            width: 100%;
+        }
+
         .subheading{
             font-size: 1.8rem;
         }
@@ -1078,7 +1083,7 @@ padding: 2rem;
         }
 
         .sangeeta-right, .monu-left{
-            padding:0rem 2rem 0rem 2rem;
+            padding:0rem 1rem 0rem 1rem;
             
         }
 
@@ -1093,17 +1098,6 @@ padding: 2rem;
             margin-bottom: -2rem
             
         }
-
-
-
-
-
-
-
-
-
-
-        
 
         .contact-container{
             height: auto;  
