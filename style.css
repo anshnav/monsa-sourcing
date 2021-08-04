@@ -443,10 +443,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 4rem;
 }
 
 .home-section3-right img {
-  width: 45%;
+  width: 50%;
   padding: 0.2rem;
 }
 
@@ -1105,6 +1106,7 @@ h2 {
   }
   .home-section3-right {
     margin-top: 10rem;
+    padding: 2rem;
   }
   .sangeeta-right, .monu-left {
     padding: 0rem 1rem 0rem 1rem;
