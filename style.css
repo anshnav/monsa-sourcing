@@ -155,7 +155,8 @@ h2 {
 }
 
 .intro-heading {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   color: white;
 }
 
